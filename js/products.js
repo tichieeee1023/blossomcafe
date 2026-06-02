@@ -1,4 +1,4 @@
-// js/products.js
+// js/products.js - 장바구니 시스템 완벽 연동 버전
 
 // 1. DOM 요소를 선택합니다. (카드가 들어갈 컨테이너)
 const galleryContainer = document.getElementById('product-gallery');
@@ -46,7 +46,13 @@ function renderProducts(productsList) {
                     <p class="product-description">${product.description}</p>
                     <div class="product-footer">
                         <span class="product-price">${formattedPrice}</span>
-                        <button class="order-btn" onclick="alert('${product.name}을(를) 장바구니에 담았습니다! 🌸')">담기</button>
+                        
+                        <button type="button" class="order-btn btn-add-to-cart" 
+                                data-name="${product.name}" 
+                                data-price="${product.price}" 
+                                data-image="${product.image}">
+                            담기
+                        </button>
                     </div>
                 </div>
             </article>
@@ -54,6 +60,31 @@ function renderProducts(productsList) {
 
         // 생성한 카드를 컨테이너에 하나씩 차곡차곡 넣어줍니다.
         galleryContainer.insertAdjacentHTML('beforeend', cardHTML);
+    });
+
+    // ★ [추가] 카드가 화면에 다 그려진 직후, 버튼들에게 실시간 클릭 이벤트 주입하기!
+    bindAddToCartEvents();
+}
+
+// 5. 버튼을 클릭했을 때 우리의 cart.js에 있는 addToCart 함수와 연결해주는 중매 함수
+function bindAddToCartEvents() {
+    const cartButtons = document.querySelectorAll('.btn-add-to-cart');
+    
+    cartButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            // 버튼에 심겨있던 JSON 데이터들을 낚아챕니다.
+            const targetButton = e.currentTarget; // 안정적으로 버튼 태그 타겟팅
+            const name = targetButton.getAttribute('data-name');
+            const price = parseInt(targetButton.getAttribute('data-price'), 10);
+            const img = targetButton.getAttribute('data-image');
+            
+            // 우리가 cart.js 전역 공간(window)에 정교하게 만들어 둔 addToCart 함수 강제 소환!
+            if (typeof window.addToCart === 'function') {
+                window.addToCart(name, price, img);
+            } else {
+                console.error('cart.js 파일이 shop.html에 정상적으로 연결되지 않았습니다.');
+            }
+        });
     });
 }
 

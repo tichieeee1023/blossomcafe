@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Blossom Cafe - 장바구니</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/cart.css" /> </head>
+<body>
+
+    <header class="site-header">
+        <nav class="gnb">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">🌸</span>
+                <span>Pink Blossom Café</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="cart.html" class="active">CART</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+            </ul>
+            <div class="status-widget">
+                <div class="status-item">
+                    💖 <span id="date-text">0000. 00. 00</span> 
+                    <span id="clock-text" style="margin-left: 6px;">00:00:00</span>
+                </div>
+                <div class="status-divider"></div>
+                <div class="status-item">🌤️ <span id="weather-text">날씨 불러오는 중</span></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="cart-page">
+        <div class="cart-inner">
+            <div class="cart-header">
+                <h2>Shopping Cart</h2>
+                <p>당신의 달콤한 선택들이 담겨있는 공간입니다.</p>
+            </div>
+
+            <div class="cart-content">
+                <div class="cart-list-wrapper">
+                    <div id="cart-items" class="cart-items-container">
+                        </div>
+                </div>
+
+                <div class="cart-summary-wrapper">
+                    <div class="summary-box">
+                        <h3>결제 금액 확인</h3>
+                        <div class="summary-row">
+                            <span>총 상품 금액</span>
+                            <span id="total-product-price">0원</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>배송비 (3만원 이상 무료)</span>
+                            <span id="shipping-fee">3,000원</span>
+                        </div>
+                        <hr class="summary-divider">
+                        <div class="summary-row total">
+                            <span>최종 결제 금액</span>
+                            <span id="final-total-price">0원</span>
+                        </div>
+                        <button type="button" class="checkout-btn" onclick="alert('주문 기능은 준비 중입니다! 🌸')">주문하기 ✨</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">Pink Blossom Café</div>
+            <ul class="footer-info">
+                <li>영업시간: 매일 10:00 - 22:00</li>
+                <li>주소: 핑크시 블라썸로 104</li>
+                <li>© 2026 Pink Blossom. All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+    <div class="cursor-follower"></div>
+
+    <script src="js/main.js"></script>
+    <script src="js/cart.js"></script> </body>
+</html>
