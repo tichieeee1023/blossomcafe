@@ -5,13 +5,13 @@
     "category": "Beverage",
     "price": 6500,
     "description": "새콤달콤 라즈베리가 들어간 시그니처 에이드",
-    "image": "https://images.unsplash.com/photo-1560526860-1f0e56046c85?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fCVFQyU5RCU4QyVFQiVBMyU4Q3xlbnwwfHwwfHx8MA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1560526860-1f0e56046c85?w=500&auto=format&fit=crop&q=60"
   },
   {
     "id": 2,
     "name": "딸기 쏙 퐁당 스무디",
     "category": "Beverage",
-    "price": 6800,
+    "price": 5500,
     "description": "생딸기 과육이 듬뿍 들어가 상큼달콤한 리얼 딸기 스무디",
     "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80"
   },
@@ -21,54 +21,78 @@
     "category": "Beverage",
     "price": 6000,
     "description": "오렌지와 복숭아 과즙이 어우러진 탄산 음료",
-    "image": "https://images.unsplash.com/photo-1583073600538-f219abfb20bc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fCVFQyU5RCU4QyVFQiVBMyU4Q3xlbnwwfHwwfHx8MA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1583073600538-f219abfb20bc?w=500&auto=format&fit=crop&q=60"
   },
   {
     "id": 4,
     "name": "로즈 레드 벨벳 머핀",
     "category": "Dessert",
-    "price": 7500,
+    "price": 4800,
     "description": "달콤한 크림을 쌓아 장미꽃 모양으로 장식한 머핀",
-    "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?q=80&w=687&auto=format&fit=crop"
   },
   {
     "id": 5,
     "name": "사쿠라 블러시 마카롱 (3개입)",
     "category": "Dessert",
-    "price": 8500,
+    "price": 6800,
     "description": "벚꽃 향 가득한 부드러운 가나슈 필링 마카롱 세트",
-    "image": "https://images.unsplash.com/photo-1612198790700-0ff08cb726e5?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1612198790700-0ff08cb726e5?q=80&w=687&auto=format&fit=crop"
   },
   {
     "id": 6,
     "name": "라즈베리 벨벳 타르트",
     "category": "Dessert",
-    "price": 4200,
+    "price": 6500,
     "description": "진한 핑크빛 라즈베리를 올린 부드러운 타르트",
-    "image": "https://images.unsplash.com/photo-1615735487485-e52b9af610c1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1615735487485-e52b9af610c1?q=80&w=687&auto=format&fit=crop"
   },
-{
+  {
     "id": 7,
     "name": "로즈 블라썸 커피",
     "category": "Beverage",
-    "price": 9500,
+    "price": 7000,
     "description": "환상적인 핑크 그라데이션의 스페셜 커피",
-    "image": "https://images.unsplash.com/photo-1683924845319-f0805c515dec?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1683924845319-f0805c515dec?q=80&w=687&auto=format&fit=crop"
   },
   {
     "id": 8,
     "name": "리얼 스트로베리 머핀",
     "category": "Dessert",
-    "price": 18000,
+    "price": 5200,
     "description": "앙증맞은 진짜 딸기가 올라간 달콤한 머핀",
-    "image": "https://images.unsplash.com/photo-1563778084459-859099e48677?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    "image": "https://images.unsplash.com/photo-1563778084459-859099e48677?q=80&w=687&auto=format&fit=crop"
   },
   {
     "id": 9,
-    "name": "핑크 블라썸 토끼",
+    "name": "핑크 블라썸 마스코트 토끼 인형",
     "category": "Goods",
-    "price": 6300,
-    "description": "핑크 블라썸의 마스코트 토끼를 만나보세요",
-    "image": "https://images.unsplash.com/photo-1671734328547-8bc5f3ea7047?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA3fHwlRUQlODYlQTAlRUIlODElQkMlRUMlOUQlQjglRUQlOTglOTV8ZW58MHx8MHx8fDA%3D"
+    "price": 12000,
+    "description": "핑크 블라썸의 시그니처 마스코트 포근한 토끼 인형",
+    "image": "https://images.unsplash.com/photo-1671734328547-8bc5f3ea7047?w=500&auto=format&fit=crop&q=60"
+  },
+  {
+    "id": 10,
+    "name": "블라썸 하트 쿠키(2개입)",
+    "category": "Dessert",
+    "price": 4000,
+    "description": "달콤한 딸기잼과 버터향이 부드럽게 어우러진 하트 모양 쿠키",
+    "image": "https://plus.unsplash.com/premium_photo-1673713732877-a223acf04521?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    "id": 11,
+    "name": "핑크 로즈 크림 도넛",
+    "category": "Dessert",
+    "price": 6200,
+    "description": "화사한 로즈 글레이즈를 얹은 달콤한 도넛",
+    "image": "https://images.unsplash.com/photo-1649035570096-5f82a395da94?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODR8fCVFRCU5NSU5MSVFRCU4MSVBQyUyMCVFRCU4QyU4QyVFQyU5QSVCNCVFQiU5MyU5QyUyMCVFQyVCQyU4MCVFQyU5RCVCNCVFRCU4MSVBQ3xlbnwwfHwwfHx8MA%3D%3D"
+  },
+  {
+    "id": 12,
+    "name": "핑크 블라썸 텀블러",
+    "category": "Goods",
+    "price": 19500,
+    "description": "친환경적 귀여운 파스텔 핑크빛 텀블러",
+    "image": "https://images.unsplash.com/photo-1778686568681-699398da3b65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8JUVEJTk1JTkxJUVEJTgxJUFDJTIwJUVEJTg1JTgwJUVCJUI4JTk0JUVCJTlGJUFDfGVufDB8fDB8fHww"
   }
 ]
