@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Blossom Cafe</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="gnb">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">🌸</span>
+                <span>Pink Blossom Café</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+            </ul>
+            <div class="status-widget">
+        <div class="status-item">
+            💖 <span id="date-text">0000. 00. 00</span> 
+            <span id="clock-text" style="margin-left: 6px;">00:00:00</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item">🌤️ <span id="weather-text">날씨 불러오는 중</span></div>
+    </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <h1 class="hero-title">달콤한 핑크빛 순간,<br><span>Pink Blossom</span></h1>
+                    <p class="hero-lead">따스한 봄날의 벚꽃을 닮은 화사한 공간에서<br>매일 직접 굽는 디저트와 시그니처 음료를 만나보세요.</p>
+                    <a href="shop.html" class="hero-action">메뉴 보러가기 ✨</a>
+                </div>
+               <div class="hero-visual">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=800&q=80" alt="Pink Blossom Cafe Visual 1" class="slide-img active">
+            <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=800&q=80" alt="Pink Blossom Cafe Visual 2" class="slide-img">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Pink Blossom Cafe Visual 3" class="slide-img">
+        </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="featured-inner">
+                <div class="section-header">
+                    <h2 class="section-title">Today's Signature</h2>
+                    <p class="section-lead">핑크 블라썸 카페가 오늘 가장 추천하는 시그니처 메뉴</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <div class="menu-thumb">
+                            <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=500&q=80" alt="핑크 블라썸 아인슈페너">
+                        </div>
+                        <div class="menu-meta">
+                            <h3 class="menu-name">핑크 블라썸 아인슈페너</h3>
+                            <p class="menu-desc">부드러운 라즈베리 크림이 올라간 시그니처 커피</p>
+                            <span class="menu-price">6,500원</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-thumb">
+                            <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=500&q=80" alt="딸기 쏙 퐁당 라떼">
+                        </div>
+                        <div class="menu-meta">
+                            <h3 class="menu-name">딸기 쏙 퐁당 라떼</h3>
+                            <p class="menu-desc">생딸기 과육이 듬뿍 들어가 상큼달콤한 리얼 라떼</p>
+                            <span class="menu-price">6,800원</span>
+                        </div>
+                    </div>
+                    <div class="menu-card">
+                        <div class="menu-thumb">
+                            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=500&q=80" alt="로즈 페탈 크레이프 케이크">
+                        </div>
+                        <div class="menu-meta">
+                            <h3 class="menu-name">로즈 페탈 크레이프 케이크</h3>
+                            <p class="menu-desc">한 겹 한 겹 크림을 쌓아 장미꽃 모양으로 장식한 케이크</p>
+                            <span class="menu-price">7,500원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">Pink Blossom Café</div>
+            <ul class="footer-info">
+                <li>영업시간: 매일 10:00 - 22:00</li>
+                <li>주소: 핑크시 블라썸로 104</li>
+                <li>© 2026 Pink Blossom. All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+        <!-- 첫번째 화면으로 돌아가기 -->
+    <div class="back" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"></div>
+
+        <!-- 마우스 이벤트 -->
+        <div class="cursor-follower"></div> 
+
+    <script src="js/main.js"></script>
+</body>
+</html>

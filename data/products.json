@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "핑크 블라썸 아인슈페너",
+    "category": "Beverage",
+    "price": 6500,
+    "description": "부드러운 라즈베리 크림이 올라간 시그니처 커피",
+    "image": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 2,
+    "name": "딸기 쏙 퐁당 라떼",
+    "category": "Beverage",
+    "price": 6800,
+    "description": "생딸기 과육이 듬뿍 들어가 상큼달콤한 리얼 딸기 라떼",
+    "image": "https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 3,
+    "name": "리치 피치 스파클링 에이드",
+    "category": "Beverage",
+    "price": 6000,
+    "description": "은은한 장미 향과 복숭아 과즙이 어우러진 탄산 음료",
+    "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 4,
+    "name": "로즈 페탈 크레이프 케이크",
+    "category": "Dessert",
+    "price": 7500,
+    "description": "한 겹 한 겹 크림을 쌓아 장미꽃 모양으로 장식한 케이크",
+    "image": "https://images.unsplash.com/photo-1508737804141-4c3b688e2546?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 5,
+    "name": "사쿠라 블러시 마카롱 (3개입)",
+    "category": "Dessert",
+    "price": 8500,
+    "description": "벚꽃 향 가득한 부드러운 가나슈 필링 마카롱 세트",
+    "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 6,
+    "name": "라즈베리 벨벳 타르트",
+    "category": "Dessert",
+    "price": 4200,
+    "description": "진한 핑크빛 라즈베리를 올린 부드러운 타르트",
+    "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=600&q=80"
+  },
+{
+    "id": 7,
+    "name": "로즈 블라썸 게이샤 스페셜티",
+    "category": "Beverage",
+    "price": 9500,
+    "description": "신의 커피라 불리는 게이샤 원두에 화사한 장미 향을 더한 프리미엄 핸드드립 커피",
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 8,
+    "name": "로즈골드 로열 애프터눈 티",
+    "category": "Goods",
+    "price": 18000,
+    "description": "우아한 향이 입안에 감도는 영롱한 로즈골드 티",
+    "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80"
+  },
+  {
+    "id": 9,
+    "name": "클래식 피스타치오 젤라또",
+    "category": "Beverage",
+    "price": 6300,
+    "description": "은은한 피스타치오 향이 감도는 초록빛 젤라또",
+    "image": "https://images.unsplash.com/photo-1534706936160-d5ee67737249?auto=format&fit=crop&w=600&q=80"
+  }
+]

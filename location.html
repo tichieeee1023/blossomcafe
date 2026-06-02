@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Blossom Cafe</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- 여기까진 공용 CSS, 이하는 이 페이지만의 CSS -->
+    <link rel="stylesheet" href="./css/location.css" />
+
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="gnb">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">🌸</span>
+                <span>Pink Blossom Café</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html">SHOP</a></li>
+                <li><a href="location.html" class="active">LOCATION</a></li>
+            </ul>
+                       <div class="status-widget">
+        <div class="status-item">
+            💖 <span id="date-text">0000. 00. 00</span> 
+            <span id="clock-text" style="margin-left: 6px;">00:00:00</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item">🌤️ <span id="weather-text">날씨 불러오는 중</span></div>
+    </div>
+        </nav>
+    </header>
+
+    <main class="location-page">
+        <div class="location-inner">
+            
+            <div class="location-header">
+                <p class="section-kicker">Come and Visit</p>
+                <h2>핑크 블라썸 오시는 길</h2>
+                <p>따스한 분홍빛 온기가 가득한 공간에서 당신을 기다리고 있습니다.</p>
+            </div>
+
+            <div class="location-content">
+                
+               <div class="map-wrapper">
+    <div class="map-search-buttons">
+        <button type="button" class="search-btn" onclick="searchAround('CE7')">☕ 주변 카페 검색</button>
+        <button type="button" class="search-btn" onclick="searchAround('CS2')">🏪 주변 편의점 검색</button>
+        <button type="button" class="search-btn" onclick="clearMarkers()">❌ 마커 초기화</button>
+    </div>
+    <div id="daumMaps" class="kakao-map"></div>
+</div>
+
+                <div class="info-wrapper">
+                    <div class="info-block">
+                        <h3>📍 Address</h3>
+                        <p>핑크시 블라썸로 104 (블라썸빌딩 1층)</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>🕒 Open Hours</h3>
+                        <p><strong>매일</strong> 10:00 - 22:00</p>
+                        <p class="info-sub">* 라스트 오더: 21:30</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>📞 Contact</h3>
+                        <p>02-1234-5678</p>
+                        <p class="info-sub">단체석 예약 및 대관 문의는 전화로 부탁드립니다.</p>
+                    </div>
+
+                    <div class="info-block">
+                        <h3>🚗 가이드</h3>
+                        <p><strong>지하철:</strong> 블라썸역 2번 출구에서 도보 3분</p>
+                        <p><strong>주차:</strong> 건물 지하 주차장 2시간 무료 이용 가능</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">Pink Blossom Café</div>
+            <ul class="footer-info">
+                <li>영업시간: 매일 10:00 - 22:00</li>
+                <li>주소: 핑크시 블라썸로 104</li>
+                <li>© 2026 Pink Blossom. All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+
+       <!-- 첫번째 화면으로 돌아가기 -->
+        <div class="back" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"></div>
+
+        <!-- 마우스 이벤트 -->
+        <div class="cursor-follower"></div> 
+
+<script
+        type="text/javascript" 
+        src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f0c5420549b169c2000a013b5c91d29b&libraries=services&autoload=false">
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/location.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink Blossom Cafe</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <!-- 여기까진 공용 CSS, 이하는 이 페이지만의 CSS -->
+    <link rel="stylesheet" href="./css/shop.css" />
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="gnb">
+            <a href="index.html" class="brand">
+                <span class="brand-mark">🌸</span>
+                <span>Pink Blossom Café</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="shop.html" class="active">SHOP</a></li>
+                <li><a href="location.html">LOCATION</a></li>
+            </ul>
+        <div class="status-widget">
+        <div class="status-item">
+            💖 <span id="date-text">0000. 00. 00</span> 
+            <span id="clock-text" style="margin-left: 6px;">00:00:00</span>
+        </div>
+        <div class="status-divider"></div>
+        <div class="status-item">🌤️ <span id="weather-text">날씨 불러오는 중</span></div>
+    </div>
+        </nav>
+    </header>
+
+    <main class="shop-section">
+        <div class="shop-inner">
+            <div class="shop-header">
+                <h2 class="shop-title">Menu & Goods</h2>
+                <p class="shop-desc">핑크 블라썸의 달콤한 메뉴와 감성 가득한 굿즈를 만나보세요.</p>
+            </div>
+
+            <div class="gallery-container" id="product-gallery"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">Pink Blossom Café</div>
+            <ul class="footer-info">
+                <li>영업시간: 매일 10:00 - 22:00</li>
+                <li>주소: 핑크시 블라썸로 104</li>
+                <li>© 2026 Pink Blossom. All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
+</footer>
+
+    <!-- 첫번째 화면으로 돌아가기 -->
+        <div class="back" onclick="window.scrollTo({top: 0, behavior: 'smooth'});"></div>
+
+     <!-- 마우스 이벤트 -->
+      <div class="cursor-follower"></div> 
+
+    <!-- 자바 스크립트 영역 -->
+        <script src="js/main.js"></script>
+        <script src="js/products.js"></script>
+    </body>
+    </html>

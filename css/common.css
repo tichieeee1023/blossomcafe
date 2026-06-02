@@ -1,0 +1,302 @@
+/* css/common.css */
+
+/* 구글 웹폰트 및 프리텐다드 불러오기 */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css");
+
+/* 2. 전역 본문 폰트 지정 (기본값은 깔끔한 프리텐다드로!) */
+body {
+    font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* 메인 타이틀이나 영어로 된 헤드라인에만 Playfair Display 적용 */
+.hero-title span, 
+.section-title,
+.shop-title,
+.story-subtitle {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic; 
+}
+
+/* 1. 디자인 시스템 변수 및 전역 초기화 */
+:root {
+    --pink-50: #fff7fa;
+    --pink-100: #ffe9f0;
+    --pink-200: #ffd3df;
+    --pink-400: #ff85a2;
+    --pink-500: #f35f87;
+    --rose: #c95473;
+    --cream: #fffaf6;
+    --ink: #35252b;
+    --muted: #7a646c;
+    --line: rgba(201, 84, 115, 0.16);
+    --shadow: 0 18px 45px rgba(201, 84, 115, 0.14);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 82px;
+    color: var(--ink);
+    font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(180deg, var(--pink-50) 0%, #ffffff 48%, var(--cream) 100%);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 2. 상단 헤더 & 네비게이션 (GNB) */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    border-bottom: 1px solid var(--line);
+    background: rgba(255, 247, 250, 0.88);
+    backdrop-filter: blur(18px);
+}
+
+.gnb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    width: min(1180px, calc(100% - 40px));
+    min-height: 82px;
+    margin: 0 auto;
+}
+
+.brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.08rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.brand-mark {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background: linear-gradient(135deg, var(--pink-400), #ffc6d7);
+    box-shadow: 0 10px 24px rgba(243, 95, 135, 0.25);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 38px;
+    padding: 0 15px;
+    border-radius: 999px;
+    color: var(--muted);
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible,
+.nav-links a.active {
+    color: var(--rose);
+    background: rgba(255, 133, 162, 0.14);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+/* 3. 날씨 & 시간 위젯 */
+.status-widget {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 42px;
+    padding: 7px 12px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    color: var(--muted);
+    background: rgba(255, 255, 255, 0.72);
+    box-shadow: 0 10px 26px rgba(201, 84, 115, 0.08);
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.status-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-divider {
+    width: 1px;
+    height: 18px;
+    background: var(--line);
+}
+
+/* 4. 하단 푸터 */
+.site-footer {
+    padding: 46px 0;
+    border-top: 1px solid var(--line);
+    background: #fff7fa;
+}
+
+.footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 28px;
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+    color: var(--muted);
+    font-size: 0.94rem;
+}
+
+.footer-brand {
+    color: var(--ink);
+    font-size: 1.05rem;
+    font-weight: 900;
+}
+
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* 5. 헤더/푸터 반응형 미디어쿼리 */
+@media (max-width: 920px) {
+    body { padding-top: 132px; }
+    .gnb { flex-wrap: wrap; justify-content: center; gap: 12px 18px; padding: 14px 0; }
+    .brand { flex: 1 1 100%; justify-content: center; }
+    .footer-inner { align-items: flex-start; flex-direction: column; }
+    .footer-info { justify-content: flex-start; }
+}
+
+@media (max-width: 640px) {
+    body { padding-top: 178px; }
+    .gnb { width: min(100% - 28px, 1180px); }
+    .nav-links { width: 100%; justify-content: space-between; gap: 2px; }
+    .nav-links a { padding: 0 9px; font-size: 0.78rem; }
+    .status-widget { width: 100%; justify-content: center; border-radius: 18px; white-space: normal; }
+    .footer-inner { width: min(100% - 28px, 1180px); }
+}
+
+
+/* css/common.css 맨 하단 교체 부착 */
+
+.back {
+    /* 1. 화면 우측 하단에 완벽한 원형으로 고정 */
+    position: fixed;
+    right: 32px;
+    bottom: 32px;
+    width: 48px;  /* 가로세로 똑같이 줘서 예쁜 정원 만들기 */
+    height: 48px;
+    z-index: 100;
+    
+    /* 2. 핑크 블라썸 특유의 맑고 영롱한 유리 효과 */
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid var(--pink-200);
+    border-radius: 50%; /* 완벽한 동그라미 */
+    
+    /* 3. 내부 화살표(▲) 정중앙 정렬 및 스타일 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--rose);
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 6px 20px rgba(201, 84, 115, 0.08);
+    
+    /* 4. 꾸물거림 없는 깔끔한 직선/곡선 모션 세팅 */
+    transform: translateY(0);
+    /* 찌그러지는 scale 대신 위치(transform)와 부드러운 색상 변화만 타겟팅 */
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+                background-color 0.2s ease, 
+                color 0.2s ease, 
+                box-shadow 0.2s ease;
+}
+
+/* 텍스트 대신 깔끔하게 위를 가리키는 화살표 기호 가상요소로 심기 */
+.back::before {
+    content: '▲'; /* 가상 요소로 화살표 배치 */
+    font-family: sans-serif;
+}
+
+/* 마우스 올렸을 때 (Hover) */
+.back:hover {
+    background: var(--pink-500);
+    color: #ffffff;
+    border-color: var(--pink-500);
+    box-shadow: 0 10px 24px rgba(243, 95, 135, 0.25);
+    
+    /* ★ 꾸물거리지 않게 scale(크기 변화)은 빼버리고, 위로 5px만 쇽- 깔끔하게 리프팅! */
+    transform: translateY(-5px); 
+}
+
+/* 클릭하는 순간 (Active) */
+.back:active {
+    /* 누르면 제자리로 슥 내려앉는 직관적인 피드백 */
+    transform: translateY(-1px);
+    background: var(--rose);
+    border-color: var(--rose);
+}
+
+
+/* =========================================================
+    마우스를 따라다니는 커서 팔로워 스타일
+   ========================================================= */
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    z-index: 9999;
+    pointer-events: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    line-height: 1;
+    margin-left: 12px;
+    margin-top: 14px;
+    opacity: 0.85;
+    transition: transform 0.14s cubic-bezier(0.215, 0.610, 0.355, 1);
+    will-change: transform;
+}
